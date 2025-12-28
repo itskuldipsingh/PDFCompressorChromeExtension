@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "PDF Compressor",
+  "version": "1.2",
+  "description": "Compress PDF files locally in your browser for total privacy and security.",
+  "permissions": ["downloads", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Open PDF Compressor"
+  }
+}

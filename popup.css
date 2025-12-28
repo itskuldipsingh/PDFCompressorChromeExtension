@@ -1,0 +1,13 @@
+body { font-family: sans-serif; background: #f4f7f6; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+.container { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 400px; }
+h2 { margin-top: 0; text-align: center; color: #333; }
+.subtitle { text-align: center; color: #28a745; font-size: 12px; margin-top: -10px; margin-bottom: 20px; }
+.section { margin-bottom: 20px; }
+.control-row { margin-bottom: 15px; }
+.control-row label { display: block; font-size: 14px; margin-bottom: 5px; color: #666; }
+input[type="range"] { width: 100%; }
+.stats-box { background: #e9ecef; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 14px; display: flex; justify-content: space-between; }
+button { width: 100%; background: #007bff; color: white; border: none; padding: 15px; border-radius: 6px; font-weight: bold; cursor: pointer; transition: 0.2s; }
+button:hover { background: #0056b3; }
+button:disabled { background: #ccc; }
+#status { text-align: center; margin-top: 10px; font-size: 13px; }

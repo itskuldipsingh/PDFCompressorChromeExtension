@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PDF Compressor</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>PDF Compressor</h2>
+    <p class="subtitle">100% Privacy - No Servers - Runs on your own computer</p>
+
+    <div class="section">
+      <input type="file" id="fileInput" accept="application/pdf">
+    </div>
+
+    <div class="section controls">
+      <div class="control-row">
+        <label>Image Quality: <span id="qVal">70</span>%</label>
+        <input type="range" id="quality" min="5" max="100" value="70">
+      </div>
+      <div class="control-row">
+        <label>Resolution Scale: <span id="sVal">1.0</span>x</label>
+        <input type="range" id="scale" min="0.5" max="2.0" step="0.1" value="1.0">
+      </div>
+    </div>
+
+    <div class="stats-box">
+      <div>Original: <span id="origSize">0 MB</span></div>
+      <div><strong>Estimated: <span id="estSize">~0 MB</span></strong></div>
+    </div>
+
+    <button id="compressBtn">Compress & Download</button>
+    <div id="status"></div>
+    <progress id="progressBar" value="0" max="100" style="display:none; width: 100%;"></progress>
+  </div>
+
+  <script src="lib/pdf.min.js"></script>
+  <script src="lib/jspdf.umd.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
